@@ -1,0 +1,11 @@
+
+<h1>Hello {{user.name}}</h1>
+<h1>Here is your Address : {{user.address}}</h1>
+
+<!--Use to check contion and then store user.phone data to phoneNumber -->
+<div *ngIf="user.phone.length > 0">
+    <p>Phone:</p>
+    <p *ngFor="let phoneNumber of user.phone">
+        {{phoneNumber}}
+    </p>
+</div>
